@@ -22,7 +22,8 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_TARGETS += *
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
