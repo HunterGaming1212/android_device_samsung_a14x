@@ -52,6 +52,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+    
+#wi-fi
+PRODUCT_PACKAGES += \
+    WifiOverlay \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a14x/a14x-vendor.mk)
